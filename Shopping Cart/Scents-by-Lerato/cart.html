@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scrpts.js">
+</head>
+<body>
+
+    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+        </li>
+
+
+    <div class="container">
+        <h1>Scents_By_Lerato</h1>
+        <div>
+            <h2>Designer Fragrances</h2>
+            <div></div>
+            <img src="https://www.fragrancefind.co.za/wp-content/uploads/2013/10/Aramani-Si-EDP-100ml.jpg" alt="Armani Si EDP Spray" width="200" height="200">
+
+            <div>
+                <h2>Armani Si EDP Spray</h2>
+                <p>Size: 100ml</p>
+                <p>Price: R800.00</p>
+                <label for="quantityInput">Quantity:</label>
+                <input type="number" id="quantityInput" min="1" value="1">
+                <button onclick="addToCart()">Add to Cart</button>
+                <div>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvC0STyBJ-9rL8lod8yf0z7DjZ5TnSs_Ko4Q&s" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvC0STyBJ-9rL8lod8yf0z7DjZ5TnSs_Ko4Q&s">
+                <h2>Miss Dior</h2>
+                <p>Size: 100ml</p>
+                <p>Price: R800.00</p>
+                <label for="quantityInput">Quantity:</label>
+                <input type="number" id="quantityInput" min="1" value="1">
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz05Wq1ZSZOlE6OkGY4NYjTmdsLdax59NdtQ&s" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz05Wq1ZSZOlE6OkGY4NYjTmdsLdax59NdtQ&s">
+                <h2>Chanel</h2>
+                <p>Size: 100ml</p>
+                <p>Price: R800.00</p>
+                <label for="quantityInput">Quantity:</label>
+                <input type="number" id="quantityInput" min="1" value="1">
+                <button onclick="addToCart()">Add to Cart</button>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwiel09Mc9LIwaq0qwoLCmepxmIzK1oLwOg&s" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwiel09Mc9LIwaq0qwoLCmepxmIzK1oLwOg&s">
+                <h2>YSL for Woman</h2>
+                <p>Size: 120ml</p>
+                <p>Price: R800.00</p>
+                <label for="quantityInput">Quantity:</label>
+                <input type="number" id="quantityInput" min="1" value="1">
+                <button onclick="addToCart()">Add to Cart</button>
+
+        </div>
+        <div id="cart">
+            <h3>Shopping Cart</h3>
+            <ul id="cart-items"></ul>
+            <p>Total: R<span id="cart-total">0.00</span></p>
+            <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
+
